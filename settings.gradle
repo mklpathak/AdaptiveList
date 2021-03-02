@@ -1,0 +1,3 @@
+include ':adaptivelist'
+include ':app'
+rootProject.name = "AdaptiveList"
