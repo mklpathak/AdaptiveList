@@ -1,77 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="co.samplelist.MainActivity">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <LinearLayout
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:id="@+id/button_container"
-        android:orientation="horizontal"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content">
-
-        <Button
-            android:layout_width="wrap_content"
-            android:text="Add Items"
-            android:id="@+id/addItems"
-            android:layout_height="wrap_content"/>
-        <Button
-            android:layout_width="wrap_content"
-            android:text="Add Items In Between"
-            android:id="@+id/addInBetween"
-            android:layout_height="wrap_content"/>
-        <Button
-            android:layout_width="wrap_content"
-            android:text="Suffle"
-            android:id="@+id/suffle"
-            android:layout_height="wrap_content"/>
-
-    </LinearLayout>
-
-
-    <LinearLayout
-        app:layout_constraintTop_toBottomOf="@id/button_container"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:id="@+id/del_button_container"
-        android:orientation="horizontal"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content">
-
-        <Button
-            android:layout_width="wrap_content"
-            android:text="Delete Item"
-            android:id="@+id/delItem"
-            android:layout_height="wrap_content"/>
-        <Button
-            android:layout_width="wrap_content"
-            android:text="Delete Items In Between"
-            android:id="@+id/delInBetween"
-            android:layout_height="wrap_content"/>
-<!--        <Button-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:text="Suffle"-->
-<!--            android:id="@+id/suffle"-->
-<!--            android:layout_height="wrap_content"/>-->
-
-    </LinearLayout>
-
-
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerview"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintVertical_bias="0"
-        app:layout_constraintTop_toBottomOf="@id/del_button_container"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-         />
+        android:layout_height="match_parent"
+        tools:context="co.samplelist.MainActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+<!--
+        <LinearLayout
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/button_container"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:text="Add Items"
+                android:id="@+id/addItems"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:text="Add Items In Between"
+                android:id="@+id/addInBetween"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:text="Suffle"
+                android:id="@+id/suffle"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+-->
+
+
+<!--
+        <LinearLayout
+            app:layout_constraintTop_toBottomOf="@id/button_container"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/del_button_container"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:text="Delete Item"
+                android:id="@+id/delItem"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:text="Delete Items In Between"
+                android:id="@+id/delInBetween"
+                android:layout_height="wrap_content" />
+            &lt;!&ndash;        <Button&ndash;&gt;
+            &lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;
+            &lt;!&ndash;            android:text="Suffle"&ndash;&gt;
+            &lt;!&ndash;            android:id="@+id/suffle"&ndash;&gt;
+            &lt;!&ndash;            android:layout_height="wrap_content"/>&ndash;&gt;
+
+        </LinearLayout>
+-->
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
